@@ -1,6 +1,6 @@
 <?php
 
-require_once('C:\xampp1\htdocs\NPTuan\url_helper\src\urlHelper.php');
+require_once('C:\xampp1\htdocs\NPTuan\src\urlHelper.php');
 // use ngophuongtuan\urlHelper;
 
 class urlHelperTest extends PHPUnit_Framework_TestCase
