@@ -1,0 +1,14 @@
+{
+    "name": "ngophuongtuan/url_helper",
+    "description": "url helper php",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Tiny.Poro",
+            "email": "ngophuongtuan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    }
+}
