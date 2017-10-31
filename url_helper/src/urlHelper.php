@@ -1,5 +1,5 @@
 <?php
-namespace ngophuongtuan\urlHelper;
+// namespace ngophuongtuan\urlHelper;
 
 class urlHelper
 {
@@ -7,9 +7,12 @@ class urlHelper
     {	
     	if (filter_var($url, FILTER_VALIDATE_URL)) {
 		    echo("$url is a valid URL");
+		    return true;
 		} else {
 		    echo("$url is not a valid URL");
+		    return false;
 		}
+		return true;
     }
 
     public static function connect($url, $path) {
@@ -19,20 +22,21 @@ class urlHelper
     		$url = substr($url, 0, $pos);
     	}
     	
-    	echo $url.$path;
+    	return $url.$path;
     }
 
     public static function getInfo($url) {
     	$protocol = parse_url($url, PHP_URL_SCHEME);
     	$port = parse_url($url, PHP_URL_PORT);
     	$domain = parse_url($url, PHP_URL_HOST);
-    	echo $protocol . " - " . $port . " - " . $domain;
+    	echo $protocol;
+    	return $protocol;
     }
 }
 
 
-$url = new urlHelper;
-$url->check("https://www.w3schools.com");
-$url->connect("http://google.com/a/", "/xyz.html");
-$url->getInfo("https://www.w3schools.com/a/");
+// $url = new urlHelper;
+// $url->check("https://www.w3schools.com");
+// $url->connect("http://google.com/a/", "/xyz.html");
+// $url->getInfo("https://www.w3schools.com/a/");
 ?> 
