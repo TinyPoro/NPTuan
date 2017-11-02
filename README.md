@@ -4,7 +4,7 @@
 $ composer require ngophuongtuan/url_helper
 ```
 
-#Usage
+# Usage
 
 Write these line at the top of you file
 ```sh
