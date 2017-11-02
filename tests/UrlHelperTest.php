@@ -1,20 +1,17 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
-
 use Acme\urlHelper;
+use PHPUnit\Framework\TestCase;
 
-class urlHelperTest extends PHPUnit_Framework_TestCase
+class UrlHelperTest extends TestCase
 {
-    public function setUp(){ }
-    public function tearDown(){ }
-
     public function testCheck()
     {
         // test to ensure that the object from an fsockopen is valid
+    
         $connObj = new urlHelper();
-        $url = "https://www.w3schools.com";
-        $this->assertTrue($connObj->check($url) == false);
+        $url = "https://www.w3schools.com.";
+        $this->assertTrue($connObj->check($url), "$url is a valid url");
     }
 
      public function testConnect()

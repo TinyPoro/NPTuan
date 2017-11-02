@@ -1,7 +1,7 @@
 <?php
 namespace Acme;
 
-class urlHelper
+class UrlHelper
 {
     public static function check($url)
     {	
@@ -30,7 +30,12 @@ class urlHelper
     	$port = parse_url($url, PHP_URL_PORT);
     	$domain = parse_url($url, PHP_URL_HOST);
     	
-    	return "protocol: ".$protocol.", port: ".$port.", domain:  ".$domain;
+        $arr = array();
+        $arr['protocol'] = $protocol;
+        $arr['port'] = $port;
+        $arr['domain'] = $domain;
+    	
+        return $arr;
     }
 }
 

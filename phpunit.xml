@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites>
-  <testsuite name="urlHelperTest" file="C:\xampp1\htdocs\NPTuan\Test\urlHelperTest.php" tests="3" assertions="3" failures="1" errors="0" time="0.010525">
-    <testcase name="testCheck" class="urlHelperTest" file="C:\xampp1\htdocs\NPTuan\Test\urlHelperTest.php" line="12" assertions="1" time="0.009785">
-      <failure type="PHPUnit_Framework_ExpectationFailedException">urlHelperTest::testCheck
-Failed asserting that false is true.
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.4/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         forceCoversAnnotation="true"
+         beStrictAboutCoversAnnotation="true"
+         beStrictAboutOutputDuringTests="true"
+         beStrictAboutTodoAnnotatedTests="true"
+         verbose="true">
+    <testsuite>
+        <directory suffix="Test.php">tests</directory>
+    </testsuite>
 
-C:\xampp1\htdocs\NPTuan\Test\urlHelperTest.php:17
-</failure>
-    </testcase>
-    <testcase name="testConnect" class="urlHelperTest" file="C:\xampp1\htdocs\NPTuan\Test\urlHelperTest.php" line="20" assertions="1" time="0.000491"/>
-    <testcase name="testGetIno" class="urlHelperTest" file="C:\xampp1\htdocs\NPTuan\Test\urlHelperTest.php" line="29" assertions="1" time="0.000249"/>
-  </testsuite>
-</testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+</phpunit>

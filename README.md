@@ -1,25 +1,39 @@
 # Install
 
-```sh
+```php
 $ composer require ngophuongtuan/url_helper
 ```
 
 # Usage
 
-Write these line at the top of you file
-```sh
-require_once __DIR__.'/../vendor/autoload.php';
-
-```
-
-
 Use namespace Acme\urlHelper to include urlHelper class.
-```sh
+
+```php
 use Acme\urlHelper;
 
 $url= new urlHelper();
+```
 
+Check valid url.
+
+```php
 $url->check($url);   				//return true if the $url is valid
+
+```
+
+Connect a url and a path
+
+```php
 $url->connect("$url", "$path");		//connect the $url with $path to a new string url
-$url->getInfo("$url");				//get the protocol, port and domain of the url
+```
+
+Get info of an url.
+
+```php
+$info = $url->getInfo("$url");				
+
+$protocol = $info['protocol'];		//get the protocol
+$port = $info['port'];				//get the port
+$domain = $info['domain'];			//get the domain
+
 ```
