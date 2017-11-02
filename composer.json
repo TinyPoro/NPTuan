@@ -1,7 +1,7 @@
 {
     "name": "ngophuongtuan/url_helper",
     "description": "url helper php",
-    "type": "project",
+    "type": "library",
     "authors": [
         {
             "name": "Tiny.Poro",
