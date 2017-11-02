@@ -1,7 +1,8 @@
 <?php
 
-require_once('C:\xampp1\htdocs\NPTuan\src\urlHelper.php');
-// use ngophuongtuan\urlHelper;
+require_once '../vendor/autoload.php';
+
+use Acme\urlHelper;
 
 class urlHelperTest extends PHPUnit_Framework_TestCase
 {
@@ -13,7 +14,7 @@ class urlHelperTest extends PHPUnit_Framework_TestCase
         // test to ensure that the object from an fsockopen is valid
         $connObj = new urlHelper();
         $url = "https://www.w3schools.com";
-        $this->assertTrue($connObj->check($url) !== false);
+        $this->assertTrue($connObj->check($url) == false);
     }
 
      public function testConnect()
@@ -33,4 +34,3 @@ class urlHelperTest extends PHPUnit_Framework_TestCase
         $this->assertTrue($connObj->getInfo($url) == "http");
     }
 }
-?>

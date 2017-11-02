@@ -1,5 +1,5 @@
 <?php
-// namespace ngophuongtuan\urlHelper;
+namespace Acme;
 
 class urlHelper
 {
@@ -34,9 +34,7 @@ class urlHelper
     }
 }
 
-
 // $url = new urlHelper;
 // $url->check("https://www.w3schools.com");
 // $url->connect("http://google.com/a/", "/xyz.html");
 // $url->getInfo("https://www.w3schools.com/a/");
-?> 
