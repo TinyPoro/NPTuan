@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="urlHelperTest" file="C:\xampp1\htdocs\NPTuan\Test\urlHelperTest.php" tests="3" assertions="3" failures="1" errors="0" time="0.010281">
+    <testcase name="testCheck" class="urlHelperTest" file="C:\xampp1\htdocs\NPTuan\Test\urlHelperTest.php" line="12" assertions="1" time="0.009372">
+      <failure type="PHPUnit_Framework_ExpectationFailedException">urlHelperTest::testCheck
+Failed asserting that false is true.
+
+C:\xampp1\htdocs\NPTuan\Test\urlHelperTest.php:17
+</failure>
+    </testcase>
+    <testcase name="testConnect" class="urlHelperTest" file="C:\xampp1\htdocs\NPTuan\Test\urlHelperTest.php" line="20" assertions="1" time="0.000386"/>
+    <testcase name="testGetIno" class="urlHelperTest" file="C:\xampp1\htdocs\NPTuan\Test\urlHelperTest.php" line="29" assertions="1" time="0.000523"/>
+  </testsuite>
+</testsuites>
